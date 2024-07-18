@@ -1,9 +1,0 @@
-<ItemPools>
-	<Pool Name="room">
-	<trinket id="Beach Ball" weight="5" />
-	<trinket id="Cursed Bomb?" weight="2" />
-	<trinket id="Toy Keys" weight="3" />
-	<trinket id="Toy Egg" weight="7" />
-	
-	</Pool>
-</ItemPools>
