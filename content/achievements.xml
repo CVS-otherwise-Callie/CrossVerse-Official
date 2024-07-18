@@ -1,0 +1,5 @@
+<items gfxroot="gfx/items/" version="1">
+
+	<active description="FEEL MY RAGE" gfx="abramrage.png" maxcharges="12" chargetype="normal" name="Abram's Rage" cache="damage" id="1"/>
+
+</items>

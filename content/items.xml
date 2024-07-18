@@ -1,0 +1,21 @@
+<items gfxroot="gfx/items/" version="1">
+
+	<active description="FEEL MY RAGE" gfx="abramrage.png" maxcharges="12" chargetype="normal" name="Abram's Rage" cache="damage" id="1"/>
+	<trinket id="2" name="Beach Ball" gfx="beachball.png" description="Dont Pop It!" cache="firedelay" />
+	<trinket id="3" name="Popped Beach Ball" gfx="bbc.png" description="Andddd Its Popped." />
+	<trinket id="4" name="Cursed Bomb?" gfx="cursedbomb.png" description="run." cache="damage" />
+	<trinket id="5" name="Toy Keys" gfx="stickynickel.png" description="No! I Want Keys!" cache="damage" />
+	<trinket id="5" name="Toy Egg" gfx="toy egg.png" description="Health 4 Wealth" cache="damage" />
+	<active description="Reroll Your Destiny...?" gfx="blued6.png" maxcharges="6" chargetype="normal" name="Blue D6" id="6"/>
+	<trinket id="7" name="Mood Ring" gfx="moodring.png" description="Unstable Stats?" cache="damage, firedelay, range, luck, shotspeed, speed"/>
+	<trinket name="Wisp Spawner" description="Ghostly friends" gfx="cursed.png" />
+	<trinket name="Special Wisp Spawner" description="Unique ghostly friends" gfx="special.png" />
+	<trinket name="Blue Crystal" description="Mysterious?" gfx="greencrystal.png" />
+	<trinket name="Black Crystal" description="Cursed?" gfx="blackcrystal.png" />
+	<trinket name="Candy Phone" description="yummity yum yum" gfx="candyphone.png" />
+	<trinket name="Tooth Charm" description="tooth shot?" gfx="toothcharm.png" />
+	<trinket name="Yes!" description="I want that!" gfx="yes.png" />
+	<trinket name="Golden Heart" description="Midases Curse?" gfx="gold.png" />
+	<trinket name="Radar" description="Secret = Revealed" gfx="radar.png" />
+
+</items>
