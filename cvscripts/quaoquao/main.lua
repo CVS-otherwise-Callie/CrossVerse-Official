@@ -1,8 +1,10 @@
 local mod = CrossVerse
 mod.LoadScripts({
+    "cvscripts.quaoquao.items.gelato"
     --it should be "yourfoldername.folder.howevermanyfoldersthereare.scripts"
     --remember NOT to leave the .lua at the end! Isaac will crash
 })
+
 
 mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE,function(_, player, flag)
     

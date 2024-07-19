@@ -1,5 +1,6 @@
 local mod = CrossVerse
 local json = require("json")
+local game = Game()
 
 CrossVerse.savedata = CrossVerse.savedata or {}
 
@@ -7,6 +8,23 @@ function CrossVerse.SaveModData()
     CrossVerse.savedata.config = {
         exampledata = CrossVerse.exampledata
     }
+
+    --I WAS LOOKING FOR THIS THANK YOU FIEND FOLIO
+    local psave = mod.getFieldInit(CrossVerse.savedata, 'run', 'playerSaveData', {})
+	for i = 1, game:GetNumPlayers() do
+		local p = Isaac.GetPlayer(i - 1)
+		local data = p:GetData()
+
+		local playerSave = {}
+		if data.crossversedata then
+			for key, val in pairs(data.crossversedata) do
+				playerSave[key] = val
+			end
+		end
+
+		psave[i] = playerSave
+	end
+
     Isaac.SaveModData(mod, json.encode(CrossVerse.savedata))
 end
 function CrossVerse.LoadModData()

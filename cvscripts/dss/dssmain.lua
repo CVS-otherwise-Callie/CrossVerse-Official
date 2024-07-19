@@ -91,7 +91,7 @@ local dmdirectory = {
 
         buttons = {
             {str = 'resume game', action = 'resume'},
-            {str = 'settings', dest = 'settings'},
+            {str = 'settings', dest = 'settings', tooltip = {strset = {'---','play around', 'with what', 'you like and', 'do not like', '---'}}},
             dssmod.changelogsButton,
             {str = '', fsize = 2, nosel = true},
             {str = 'a mod concieved', fsize = 2, nosel = true},
@@ -109,7 +109,7 @@ local dmdirectory = {
             title = 'settings',
                 buttons = {
 
-                    {str = 'a button for crossverse',      
+                    {str = 'corssverse button',      
                     choices = {'enabled', 'disabled'},
                     variable = 'exampledata',
                     cursoroff = Vector(6, 0),
