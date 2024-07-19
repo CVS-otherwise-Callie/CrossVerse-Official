@@ -6,10 +6,7 @@ getting there,
 he needs both his ranged
 and melee attacks implemented)
 
-- added actual mod structure
-
-- please join our discord 
-to tell us what we should fix 
+- added actual mod structure 
 
 - added unlock api but
 the actual unlocks have not

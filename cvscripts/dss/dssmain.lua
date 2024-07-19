@@ -96,7 +96,7 @@ local dmdirectory = {
             {str = '', fsize = 2, nosel = true},
             {str = 'a mod concieved', fsize = 2, nosel = true},
             {str = 'by the one and only', fsize = 2, nosel = true},
-            {str = 'quaoquao (mulch lover)', fsize = 2, nosel = true},
+            {str = 'quaquao (mulch lover)', fsize = 2, nosel = true},
             {str = '', fsize = 2, nosel = true},
             {str = 'check out our', fsize = 2, nosel = true},
             {str = 'discord in the', fsize = 2, nosel = true},
