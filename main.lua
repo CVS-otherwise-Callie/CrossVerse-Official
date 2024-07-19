@@ -17,22 +17,11 @@ mod.LoadScripts({
     "cvscripts.cvapi",
     "cvscripts.entities2",
     --bleh
+    "cvscripts.unlockapi.core",
+    "cvscripts.dss.changelogs",
     "cvscripts.challenges.main",
     "cvscripts.der_existente.main",
     "cvscripts.dss.dssmain",
     "cvscripts.iam.main",
-    "cvscripts.qiaoqiao.main",
+    "cvscripts.quaquao.main",
 })
-local Gelato = Isaac.GetItemIdByName("Gelato")
-local GelatoMoveSpeed = -0.15 
-function mod:EvaluateCache(player, cacheFlags)
-    if cacheFlags & CacheFlag.CACHE_SPEED == CacheFlag.CACHE_SPEED  then
-        local itemcount = player:GetCollectibleNum(Gelato)
-        local SpeedTodecrease = GelatoMoveSpeed * itemcount
-        local RangeToIncrease = 1
-        player.MoveSpeed = player.MoveSpeed + SpeedTodecrease 
-        player.TearFlags = player.TearFlags | TearFlags.TEAR_SLOW
-        player.TearRange = player.TearRange + RangeToIncrease
-    end
-end
-mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE,mod.EvaluateCache)
