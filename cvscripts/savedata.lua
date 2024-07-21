@@ -4,23 +4,6 @@ local game = Game()
 
 CrossVerse.savedata = CrossVerse.savedata or {}
 
---this is specifically fiend folio style, thanks to the ppl in fiend folio who made the savedata stuff
-function CrossVerse.getFieldInit(tab, ...) --we lvoe saving tables
-	if not tab then error("Expected table! Got " .. type(tab)) end
-
-	local keys = { ... }
-	local default = table.remove(keys) -- last arg is always default val
-
-	for i, key in ipairs(keys) do
-		if not tab[key] then
-			tab[key] = i < #keys and {} or default
-		end
-		tab = tab[key]
-	end
-
-	return tab
-end
-
 function CrossVerse.SaveModData()
     CrossVerse.savedata.config = {
         exampledata = CrossVerse.exampledata
@@ -60,6 +43,23 @@ end
 
 CrossVerse.LoadModData()
 
+
+--this is specifically fiend folio style, thanks to the ppl in fiend folio who made the savedata stuff
+function CrossVerse.getFieldInit(tab, ...) --we lvoe saving tables
+	if not tab then error("Expected table! Got " .. type(tab)) end
+
+	local keys = { ... }
+	local default = table.remove(keys) -- last arg is always default val
+
+	for i, key in ipairs(keys) do
+		if not tab[key] then
+			tab[key] = i < #keys and {} or default
+		end
+		tab = tab[key]
+	end
+
+	return tab
+end
 CrossVerse:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, function()
 	Isaac.DebugString("PREGAMEEXITPRESAVE")
     CrossVerse.SaveModData()

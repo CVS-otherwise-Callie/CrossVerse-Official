@@ -1,3 +1,19 @@
+DeadSeaScrollsMenu.AddChangelog("CrossVerse", "CrossVerse v0.0.2",[[{FSIZE2}new stuff
+
+- added the dodgeball! 
+a active that bounces
+around the room
+up to 3 times
+be careful with it...
+
+[[{FSIZE2}fixes
+
+- fixed the misnaming of quaquao
+
+- fixed a bug in the iam main
+
+]])
+
 DeadSeaScrollsMenu.AddChangelog("CrossVerse", "CrossVerse v0.0.1",[[{FSIZE2}new shit
 
 - abram kinda works!! 

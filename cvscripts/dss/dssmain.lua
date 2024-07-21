@@ -143,7 +143,7 @@ local dmdirectorykey = {
     Path = {},
 }
 
-DeadSeaScrollsMenu.AddMenu("CrossVerse", {Run = dssmod.runMenu, Open = dssmod.openMenu, Close = dssmod.closeMenu, Directory = dmdirectory, DirectoryKey = dmdirectorykey})
+DeadSeaScrollsMenu.AddMenu("Crossverse", {Run = dssmod.runMenu, Open = dssmod.openMenu, Close = dssmod.closeMenu, Directory = dmdirectory, DirectoryKey = dmdirectorykey})
 
 
 
