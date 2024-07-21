@@ -20,13 +20,13 @@
     <trinket id="5" name="Toy Egg" gfx="trinkets_005_toy_egg_trinket.png" description="Health 4 Wealth" cache="damage" />
     <trinket id="6" name="Mood Ring" gfx="trinkets_006_moodring_trinket.png" description="Unstable Stats?" cache="damage firedelay range luck shotspeed speed"/>
     <trinket id="7" name="Wisp Spawner" gfx="trinkets_007_regular_whisps.png" description="Ghostly friends"/>
-    <trinket id="8" name="Special Wisp Spawner" gfx="special_wisps_trinket.png" description="Unique ghostly friends" />
-    <trinket id="9" name="Blue Crystal" gfx="bluecrystal_trinket.png"  description="Mysterious?"/>
-    <trinket id="10" name="Black Crystal" gfx="blackcrystal_trinket.png"  description="Cursed?"/>
-    <trinket id="11" name="Candy Phone" gfx="candyphone_trinket.png" description="yummity yum yum" />
-    <trinket id="12" name="Tooth Charm" gfx="toothcharm_trinket.png"  description="tooth shot?"/>
-    <trinket id="13" name="Yes!" gfx="yes_trinket.png" description="I want that!"/>
-    <trinket id="14" name="Golden Heart" gfx="gold_heart_trinket.png" description="Midases Curse?"/>
-    <trinket id="15" name="Radar"  gfx="radar_trinket.png" description="Secret = Revealed"/>
+    <trinket id="8" name="Special Wisp Spawner" gfx="trinkets_008_special_wisps_trinket.png" description="Unique ghostly friends" />
+    <trinket id="9" name="Blue Crystal" gfx="trinkets_009_bluecrystal_trinket.png"  description="Mysterious?"/>
+    <trinket id="10" name="Black Crystal" gfx="trinkets_010_blackcrystal_trinket.png"  description="Cursed?"/>
+    <trinket id="11" name="Candy Phone" gfx="trinkets_011_candyphone_trinket.png" description="yummity yum yum" />
+    <trinket id="12" name="Tooth Charm" gfx="trinkets_012_toothcharm_trinket.png"  description="tooth shot?"/>
+    <trinket id="13" name="Yes!" gfx="trinkets_013_yes_trinket.png" description="I want that!"/>
+    <trinket id="14" name="Golden Heart" gfx="trinkets_014_gold_heart_trinket.png" description="Midases Curse?"/>
+    <trinket id="15" name="Radar"  gfx="trinkets_015_radar_trinket.png" description="Secret = Revealed"/>
 
 </items>
