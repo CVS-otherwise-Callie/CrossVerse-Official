@@ -19,6 +19,7 @@ mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE,function(_, player, flag)
         mod:UpdateGelatoTearRange(player)
     elseif flag == CacheFlag.CACHE_SPEED then
         mod:UpdateGelatoSpeed(player)
+	mod:UpdateGodsGiftSpeed(player)
     elseif flag == CacheFlag.CACHE_TEARFLAG then
         mod:UpdateGelatoTearFlags(player)
     elseif flag == CacheFlag.CACHE_TEARCOLOR then
