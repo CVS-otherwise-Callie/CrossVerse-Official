@@ -1,7 +1,5 @@
 <ItemPools>
-	<Pool Name="treasure">
-		<Item Id="1" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		
-		
+	<Pool Name="boss">
+		<Item Name="Gelato" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 </ItemPools>

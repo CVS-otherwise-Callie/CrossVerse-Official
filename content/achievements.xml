@@ -1,5 +1,16 @@
 <items gfxroot="gfx/items/" version="1">
 
-	<active description="FEEL MY RAGE" gfx="abramrage.png" maxcharges="12" chargetype="normal" name="Abram's Rage" cache="damage" id="1"/>
+	<!--Characters-->
+	<achievement name="Tainted Abram" text='' gfx="achievement_cr_abram.png" />
 
+	<!--Items from Abram-->
+	<achievement name="Lil' Abram" text='Abram Mom' gfx="achievement_lilabram.png" />
+	<achievement name="Abram's Cross" text='Abram Heart' gfx="achievement_cross.png" />
+	<achievement name="Blobins" text='Abram Isaac' gfx="achievement_blobins.png" />
+	<achievement name="Bucket of Souls" text='Abram Satan' gfx="achievement_bucketofsouls.png" />
+	<achievement name="Flask of Rage" text='Abram Blue Baby' gfx="achievement_flaskofrage.png" /> <!--FUCK IT WEEHEEEEE-->
+	<achievement name="Sick Knuckle" text='Abram Lamb' gfx="achievement_sickknuckle.png" />
+	<achievement name="Abram's Rage" text='Abram Hardmode' gfx="achievement_abramrage.png" />
+
+	<!--Other-->
 </items>

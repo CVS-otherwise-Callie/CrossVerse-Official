@@ -1,6 +1,7 @@
 local mod = CrossVerse
 mod.LoadScripts({
-    "cvscripts.quaquao.items.gelato"
+    "cvscripts.quaquao.items.gelato",
+    "cvscripts.quaquao.items.god's gift"
     --it should be "yourfoldername.folder.howevermanyfoldersthereare.scripts"
     --remember NOT to leave the .lua at the end! Isaac will crash
 })
@@ -19,7 +20,7 @@ mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE,function(_, player, flag)
         mod:UpdateGelatoTearRange(player)
     elseif flag == CacheFlag.CACHE_SPEED then
         mod:UpdateGelatoSpeed(player)
-	mod:UpdateGodsGiftSpeed(player)
+	    mod:UpdateGodsGiftSpeed(player)
     elseif flag == CacheFlag.CACHE_TEARFLAG then
         mod:UpdateGelatoTearFlags(player)
     elseif flag == CacheFlag.CACHE_TEARCOLOR then

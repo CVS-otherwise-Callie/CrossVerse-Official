@@ -17,11 +17,12 @@ mod.LoadScripts({
     "cvscripts.cvapi",
     "cvscripts.entities2",
     --bleh
-    "cvscripts.unlockapi.core",
-    "cvscripts.dss.changelogs",
     "cvscripts.challenges.main",
     "cvscripts.der_existente.main",
     "cvscripts.dss.dssmain",
+    "cvscripts.dss.changelogs",
+    "cvscripts.unlockapi.core",
     "cvscripts.iam.main",
     "cvscripts.quaquao.main",
+    "cvscripts.challenges.dodgeball",
 })
