@@ -7,26 +7,26 @@
     
 	<!--Actives-->
 	<active id="3" name="Dodgeball" gfx="collectibles_003_dodge_ball.png" description="Avoid the ball!" quality="3" maxcharges="4" chargetype="normal" cache="damage" />
-    <active id="6" name="A Ball" gfx="collectibles_006_a_ball.png" description="Loss of velocity" quality="0" maxcharges="0" chargetype="normal" cache="" />
-    <active id="7" name="God's Gift" gfx="collectibles_007_godsgift.png" description="Oh great heavens" quality="0" maxcharges="0" chargetype="normal" cache="speed health" />
+    	<active id="6" name="A Ball" gfx="collectibles_006_a_ball.png" description="Loss of velocity" quality="0" maxcharges="0" chargetype="normal" cache="" />
+   	<active id="7" name="God's Gift" gfx="collectibles_007_godsgift.png" description="Oh great heavens" quality="0" maxcharges="0" chargetype="normal" cache="speed health" />
+    	<active id="8" description="Reroll Your Destiny...?" gfx="collectibles_004_blued6.png" maxcharges="6" chargetype="normal" name="Blue D6"/>
 
 
 	<!--TRINKETS-->
-    <trinket id="3" name="Beach Ball" gfx="beach_ball_trinket.png" description="Dont Pop It!" cache="firedelay" />
-    <trinket id="4" name="Popped Beach Ball" gfx="beach_ball_popped_trinket.png" description="Your really id it huh?" />
-    <trinket id="5" name="Cursed Bomb?" gfx="cursedbombs_trinket.png" description="run." cache="damage" />
-    <trinket id="6" name="Toy Keys" gfx="toy_keys_trinket.png" description="No! I Want Keys!" cache="damage" />
-    <trinket id="7" name="Toy Egg" gfx="toy_egg_trinket.png" description="Health 4 Wealth" cache="damage" />
-    <active  id="8" description="Reroll Your Destiny...?" gfx="blue_d6_item.png" maxcharges="6" chargetype="normal" name="Blue D6" id="6"/>
-    <trinket id="9" name="Mood Ring" gfx="moodring_trinket.png" description="Unstable Stats?" cache="damage firedelay range luck shotspeed speed"/>
-    <trinket id="10" name="Wisp Spawner" description="Ghostly friends" gfx="regular_wisp_.png" />
-    <trinket id="11" name="Special Wisp Spawner" description="Unique ghostly friends" gfx="special_wisps_trinket.png" />
-    <trinket id="12" name="Blue Crystal" description="Mysterious?" gfx="bluecrystal_trinket.png" />
-    <trinket id="13" name="Black Crystal" description="Cursed?" gfx="blackcrystal_trinket.png" />
-    <trinket id="14" name="Candy Phone" description="yummity yum yum" gfx="candyphone_trinket.png" />
-    <trinket id="15" name="Tooth Charm" description="tooth shot?" gfx="toothcharm_trinket.png" />
-    <trinket id="16" name="Yes!" description="I want that!" gfx="yes_trinket.png" />
-    <trinket id="17" name="Golden Heart" description="Midases Curse?" gfx="gold_heart_trinket.png" />
-    <trinket id="18" name="Radar" description="Secret = Revealed" gfx="radar_trinket.png" />
+    <trinket id="1" name="Beach Ball" gfx="trinkets_001_beach_ball_trinket.png" description="Dont Pop It!" cache="firedelay" />
+    <trinket id="2" name="Popped Beach Ball" gfx="trinkets_002_beach_ball_popped_trinket.png" description="Your really did it huh?" />
+    <trinket id="3" name="Cursed Bomb?" gfx="trinkets_003_cursedbombs_trinket.png" description="run." cache="damage" />
+    <trinket id="4" name="Toy Keys" gfx="trinkets_004_toy_keys_trinket.png" description="No! I Want Keys!" cache="damage" />
+    <trinket id="5" name="Toy Egg" gfx="trinkets_005_toy_egg_trinket.png" description="Health 4 Wealth" cache="damage" />
+    <trinket id="6" name="Mood Ring" gfx="trinkets_006_moodring_trinket.png" description="Unstable Stats?" cache="damage firedelay range luck shotspeed speed"/>
+    <trinket id="7" name="Wisp Spawner" gfx="trinkets_007_regular_whisps.png" description="Ghostly friends"/>
+    <trinket id="8" name="Special Wisp Spawner" gfx="special_wisps_trinket.png" description="Unique ghostly friends" />
+    <trinket id="9" name="Blue Crystal" gfx="bluecrystal_trinket.png"  description="Mysterious?"/>
+    <trinket id="10" name="Black Crystal" gfx="blackcrystal_trinket.png"  description="Cursed?"/>
+    <trinket id="11" name="Candy Phone" gfx="candyphone_trinket.png" description="yummity yum yum" />
+    <trinket id="12" name="Tooth Charm" gfx="toothcharm_trinket.png"  description="tooth shot?"/>
+    <trinket id="13" name="Yes!" gfx="yes_trinket.png" description="I want that!"/>
+    <trinket id="14" name="Golden Heart" gfx="gold_heart_trinket.png" description="Midases Curse?"/>
+    <trinket id="15" name="Radar"  gfx="radar_trinket.png" description="Secret = Revealed"/>
 
 </items>
