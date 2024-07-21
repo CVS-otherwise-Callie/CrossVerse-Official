@@ -1,4 +1,4 @@
-local mod = CrossVerese
+local mod = CrossVerse
 
 local GodsGiftMoveSpeed = 0.50
 
