@@ -17,5 +17,5 @@
 	<trinket name="Yes!" description="I want that!" gfx="yes.png" />
 	<trinket name="Golden Heart" description="Midases Curse?" gfx="gold.png" />
 	<trinket name="Radar" description="Secret = Revealed" gfx="radar.png" />
-
+	<passive description="OH GREAT HEAVENS" gfx="godsgift.png" name="God's Gift" cache="speed health" id="7"/>
 </items>
