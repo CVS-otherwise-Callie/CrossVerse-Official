@@ -21,6 +21,7 @@ mod.SkeletalFigureReplaceList = {
 
 
 function mod:ReplaceItemSkeletalFigure(item)
+    local player = Isaac.GetPlayer()
     if player:HasCollectible(CollectibleType.SKELETAL_FIGURE) then
     local pedestal = item:ToPickup()
     if pedestal:CanReroll() then
