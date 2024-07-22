@@ -1,9 +1,10 @@
 --put api here
 local mod = CrossVerse
 
-function CrossVerse:CheckTable(table, thing)
-	for v in ipairs (table) do
-		if thing == v then
+function CrossVerse.CheckTable(table, thing)
+	for _, v in ipairs (table) do
+		print(thing.SubType , v)
+		if tonumber(thing) == tonumber(v) then
 			return true
 		end
 	end

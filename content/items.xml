@@ -5,7 +5,7 @@
 	<passive id="1" name="Gelato" gfx="collectibles_001_gelato.png" description="Stay frosty" quality="2" cache="speed tearflag range"/>
 	<!--passive id="2" name="Lil' Abram" gfx="collectibles_001_babyabram.png" description="Pierce your enemies"-->
 	<passive id="7" name="God's Gift" gfx="collectibles_007_godsgift.png" description="Oh great heavens" quality="0" cache="speed health" />
-	<passive id="8" name="Skeletal Figure" gfx="collectibles_008_skeletal_figure.png" description="More bonage to be spawned" quality="3" cache="firedelay"/>
+	<passive id="8" name="Skeletal Figure" gfx="collectibles_008_skeletal_figure.png" description="More bonage" quality="3" cache="firedelay"/>
     
 	<!--Actives-->
 	<active id="3" name="Dodgeball" gfx="collectibles_003_dodge_ball.png" description="Avoid the ball!" quality="3" maxcharges="4" chargetype="normal" cache="damage" />
