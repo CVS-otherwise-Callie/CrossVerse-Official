@@ -116,4 +116,11 @@ function CrossVerse.AddTrinketPickupCallback(onAdd, onRemove, item, onGulp)
 	end
 end
 
+mod:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, function(_, player)
+	TrackedItems.Players[player:GetCollectibleRNG(1):GetSeed()] = {
+		Collect = {},
+		Trinket = {}
+	}
+end)
+
 
