@@ -19,7 +19,9 @@ mod.SkeletalFigureReplaceList = {
     CollectibleType.COLLECTIBLE_BONE_SPURS,
 }
 
+
 function mod:ReplaceItemSkeletalFigure(item)
+    if player:HasCollectible(CollectibleType.SKELETAL_FIGURE) then
     local pedestal = item:ToPickup()
     if pedestal:CanReroll() then
         if item.Type == EntityType.ENTITY_PICKUP and item.Variant == PickupVariant.PICKUP_COLLECTIBLE then
@@ -32,5 +34,6 @@ function mod:ReplaceItemSkeletalFigure(item)
                 end
             end
         end
+    end
     end
 end
