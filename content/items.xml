@@ -11,8 +11,7 @@
 	<active id="3" name="Dodgeball" gfx="collectibles_003_dodge_ball.png" description="Avoid the ball!" quality="3" maxcharges="4" chargetype="normal" cache="damage" />
 	<active id="3" name="Blue D6" gfx="collectibles_004_blued6.png" description="Reroll your destiny...?" quality="3" maxcharges="6" chargetype="normal" cache="damage" />
     <active id="6" name="A Ball" gfx="collectibles_006_a_ball.png" description="Loss of velocity" quality="0" maxcharges="0" chargetype="normal" cache="" />
-   	<active id="7" name="God's Gift" gfx="collectibles_007_godsgift.png" description="Oh great heavens" quality="0" maxcharges="0" chargetype="normal" cache="speed health" />
-
+    
 	<!--TRINKETS-->
     <trinket id="1" name="Beach Ball" gfx="trinkets_001_beach_ball_trinket.png" description="Dont Pop It!" cache="firedelay" />
     <trinket id="2" name="Popped Beach Ball" gfx="trinkets_002_beach_ball_popped_trinket.png" description="Your really did it huh?" />
