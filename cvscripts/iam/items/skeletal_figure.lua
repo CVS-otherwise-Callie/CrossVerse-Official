@@ -2,14 +2,6 @@ local mod = CrossVerse
 local rng = RNG()
 local itemConfig = Isaac.GetItemConfig()
 
-
-CrossVerse.AddItemPickupCallback(function(player)
-    if player:HasCollectible(CollectibleType.SKELETAL_FIGURE) then
-        player:AddHearts(-3)
-        player:AddBoneHearts(3)
-     end
-end, nil, CollectibleType.SKELETAL_FIGURE)
-
 function mod:UpdateSkeletalFigureDamage(player)
     if player:HasCollectible(CollectibleType.SKELETAL_FIGURE) then
         player.Damage = player.Damage + (0.5 * player:GetCollectibleNum(CollectibleType.SKELETAL_FIGURE))

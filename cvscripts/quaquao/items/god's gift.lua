@@ -9,8 +9,8 @@ function mod:UpdateGodsGiftMoveSpeed(player)
   end
 end
 
-CrossVerse.AddItemPickupCallback(function(player)
+function mod:UpdateGodsGiftHealth(player)
    if player:HasCollectible(CollectibleType.GODS_GIFT) then
        player:AddSoulHearts(2)
     end
-end)
+end
