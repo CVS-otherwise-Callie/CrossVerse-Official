@@ -1,5 +1,7 @@
 local mod = CrossVerse
 local rng = RNG()
+local itemConfig = Isaac.GetItemConfig()
+
 
 CrossVerse.AddItemPickupCallback(function(player)
     if player:HasCollectible(CollectibleType.SKELETAL_FIGURE) then
