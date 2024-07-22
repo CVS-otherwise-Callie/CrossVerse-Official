@@ -10,3 +10,4 @@ function mod:UpdateGodsGiftMoveSpeed(player)
   function mod:UpdateGodsGiftHealth(player)
    if player:HasCollectible(CollectibleType.GODS_GIFT) then
   local  player:AddSoulHearts(2)
+    end
