@@ -2,6 +2,7 @@ local mod = CrossVerse
 mod.LoadScripts({
     "cvscripts.iam.items.dodgeball",
     "cvscripts.iam.items.a_ball",
+    "cvscripts.iam.items.skeletal_figure"
     --it should be "yourfoldername.folder.howevermanyfoldersthereare.scripts"
     --remember NOT to leave the .lua at the end! Isaac will crash
 })
@@ -54,4 +55,8 @@ mod:AddCallback(ModCallbacks.MC_PRE_TEAR_COLLISION, function(_, entity)
     if data.isDodgeball == true then
         mod:DodgeBallEntityAi(entity)
     end
+end)
+
+mod:AddCallback(ModCallbacks.MC_POST_PICKUP_INIT, function(_, pickup)
+    mod:ReplaceItemSkeletalFigure(pickup)
 end)

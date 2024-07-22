@@ -1,6 +1,15 @@
 --put api here
 local mod = CrossVerse
 
+function CrossVerse:CheckTable(table, thing)
+	for v in ipairs (table) do
+		if thing == v then
+			return true
+		end
+	end
+	return false
+end
+
 function CrossVerse.Unlock(unlock, force)
     local gamedata = Isaac.GetPersistentGameData()
     if not force then
@@ -75,4 +84,36 @@ mod:AddCallback(ModCallbacks.MC_INPUT_ACTION, function(_, ent, hook, buttonactio
 		end
 	end
 end, InputHook.IS_ACTION_TRIGGERED)
+
+
+--thanks fiend folio! I genuienly was scratching my head on doing this
+-- Extra item callbacks
+local TrackedItems = {
+	Players = {},
+	Callbacks = {
+		Collect = {},
+		Trinket = {}
+	}
+}
+
+function CrossVerse.AddItemPickupCallback(onAdd, onRemove, item, forceAddOnRepickup)
+	local entry = TrackedItems.Callbacks.Collect[item]
+	local listing = { Add = onAdd, Remove = onRemove, ForceAddOnRepickup = forceAddOnRepickup }
+	if not entry then
+		TrackedItems.Callbacks.Collect[item] = { listing }
+	else
+		table.insert(entry, listing)
+	end
+end
+
+function CrossVerse.AddTrinketPickupCallback(onAdd, onRemove, item, onGulp)
+	local entry = TrackedItems.Callbacks.Trinket[item]
+	local listing = { Add = onAdd, Remove = onRemove, Gulp = onGulp }
+	if not entry then
+		TrackedItems.Callbacks.Trinket[item] = { listing }
+	else
+		table.insert(entry, listing)
+	end
+end
+
 
