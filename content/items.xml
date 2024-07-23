@@ -6,6 +6,7 @@
 	<!--passive id="2" name="Lil' Abram" gfx="collectibles_001_babyabram.png" description="Pierce your enemies"-->
 	<passive id="7" name="God's Gift" gfx="collectibles_007_godsgift.png" description="Oh great heavens" quality="0" cache="speed health" />
 	<passive id="8" name="Skeletal Figure" gfx="collectibles_008_skeletal_figure.png" description="More bonage" quality="3" cache="firedelay"/>
+	<passive id="9" name="Toothpaste" gfx="collectibles_009_toothpaste.png" description="Damage up + shotspeed down" quality="3" cache="shotspeed damage tearcolor"/>
     
 	<!--Actives-->
 	<active id="3" name="Dodgeball" gfx="collectibles_003_dodge_ball.png" description="Avoid the ball!" quality="3" maxcharges="4" chargetype="normal" cache="damage" />
