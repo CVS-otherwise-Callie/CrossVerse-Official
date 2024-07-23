@@ -9,77 +9,70 @@ local DSSCoreVersion = 7
 local MenuProvider = {}
 
 function MenuProvider.SaveSaveData()
-	mod:SaveModData()
+	CrossVerse.SaveManager:Save()
 end
 
 function MenuProvider.GetPaletteSetting()
-	return CrossVerse.savedata.MenuPalette
+	return CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenuPalette
 end
 
 function MenuProvider.SavePaletteSetting(var)
-	CrossVerse.savedata.MenuPalette = var
+	CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenuPalette = var
 end
 
 function MenuProvider.GetHudOffsetSetting()
-	if not REPENTANCE then
-		return CrossVerse.savedata.HudOffset
-	else
-		return Options.HUDOffset * 10
-	end
+	return Options.HUDOffset * 10
 end
 
 function MenuProvider.SaveHudOffsetSetting(var)
-	if not REPENTANCE then
-		CrossVerse.savedata.HudOffset = var
-	end
 end
 
 function MenuProvider.GetGamepadToggleSetting()
-	return CrossVerse.savedata.GamepadToggle
+	return CrossVerse.SaveManager.GetDeadSeaScrollsSave().GamepadToggle
 end
 
 function MenuProvider.SaveGamepadToggleSetting(var)
-	CrossVerse.savedata.GamepadToggle = var
+	CrossVerse.SaveManager.GetDeadSeaScrollsSave().GamepadToggle = var
 end
 
 function MenuProvider.GetMenuKeybindSetting()
-	return CrossVerse.savedata.MenuKeybind
+	return CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenuKeybind
 end
 
 function MenuProvider.SaveMenuKeybindSetting(var)
-	CrossVerse.savedata.MenuKeybind = var
+	CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenuKeybind = var
 end
 
 function MenuProvider.GetMenuHintSetting()
-	return CrossVerse.savedata.MenuHint
+	return CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenuHint
 end
 
 function MenuProvider.SaveMenuHintSetting(var)
-	CrossVerse.savedata.MenuHint = var
+	CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenuHint = var
 end
 
 function MenuProvider.GetMenuBuzzerSetting()
-	return CrossVerse.savedata.MenuBuzzer
+	return CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenuBuzzer
 end
 
 function MenuProvider.SaveMenuBuzzerSetting(var)
-	CrossVerse.savedata.MenuBuzzer = var
+	CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenuBuzzer = var
 end
 
 function MenuProvider.GetMenusNotified()
-	return CrossVerse.savedata.MenusNotified
+	return CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenusNotified
 end
 
 function MenuProvider.SaveMenusNotified(var)
-	CrossVerse.savedata.MenusNotified = var
+	CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenusNotified = var
 end
 
 function MenuProvider.GetMenusPoppedUp()
-	return CrossVerse.savedata.MenusPoppedUp
+	return CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenusPoppedUp
 end
 
 function MenuProvider.SaveMenusPoppedUp(var)
-	CrossVerse.savedata.MenusPoppedUp = var
+	CrossVerse.SaveManager.GetDeadSeaScrollsSave().MenusPoppedUp = var
 end
 local DSSInitializerFunction = include("cvscripts.dss.dssmenucore")
 local dssmod = DSSInitializerFunction(DSSModName, DSSCoreVersion, MenuProvider)

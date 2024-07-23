@@ -4,8 +4,8 @@ local itemConfig = Isaac.GetItemConfig()
 
 
 function mod:UpdateSkeletalFigureDamage(player)
-    if player:HasCollectible(CollectibleType.SKELETAL_FIGURE) then
-        player.Damage = player.Damage + (0.5 * player:GetCollectibleNum(CollectibleType.SKELETAL_FIGURE))
+    if player:HasCollectible(mod.Item.SKELETAL_FIGURE) then
+        player.Damage = player.Damage + (0.5 * player:GetCollectibleNum(mod.Item.SKELETAL_FIGURE))
     end
 end
 
@@ -22,7 +22,7 @@ mod.SkeletalFigureReplaceList = {
 
 function mod:ReplaceItemSkeletalFigure(item)
     local player = Isaac.GetPlayer()
-    if player:HasCollectible(CollectibleType.SKELETAL_FIGURE) then
+    if player:HasCollectible(mod.Item.SKELETAL_FIGURE) then
     local pedestal = item:ToPickup()
     if pedestal:CanReroll() then
         if item.Type == EntityType.ENTITY_PICKUP and item.Variant == PickupVariant.PICKUP_COLLECTIBLE then
