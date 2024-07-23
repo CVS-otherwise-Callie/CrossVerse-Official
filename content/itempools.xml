@@ -43,6 +43,7 @@
 		<Item Name="Dodgeball" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="greedBoss"> <!--this is the white room-->
+		<Item Name="Toothpaste" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="greedShop">
 		<Item Name="Dodgeball" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
