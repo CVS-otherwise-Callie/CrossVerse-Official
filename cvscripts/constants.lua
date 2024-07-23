@@ -7,6 +7,7 @@ CollectibleType.COLLECTIBLE_DODGEBALL = Isaac.GetItemIdByName("Dodgeball") -- id
 CollectibleType.COLLECTIBLE_A_BALL = Isaac.GetItemIdByName("A Ball") -- id 6
 CollectibleType.GODS_GIFT = Isaac.GetItemIdByName("God's Gift") -- id 7
 CollectibleType.SKELETAL_FIGURE = Isaac.GetItemIdByName("Skeletal Figure") -- id 8
+CollectibleType.COLLECTIBLE_TOOTHPASTE = Isaac.GetItemIdByName("Toothpaste") -- id 9
 
 mod.PassiveItems = {
     CollectibleType.COLLECTIBLE_GELATO,
