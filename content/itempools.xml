@@ -2,13 +2,13 @@
 <!--keep this in mind: The amount on how often an item will be in the itempool is determined with the following equation: math.ceil( ( Weight - RemoveOn ) / DecreaseBy )-->
 	<Pool Name="treasure">
 		<Item Name="Gelato" Weight="2" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Dodgeball" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Dodgeball" Weight="2" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="shop">
 	</Pool>
 	<Pool Name="boss">
-		<Item Name="Gelato" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Toothpaste" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Gelato" Weight="2" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Toothpaste" Weight="3" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="devil">
 		<Item Name="Skeletal Figure" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
