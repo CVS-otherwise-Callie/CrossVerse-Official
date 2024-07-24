@@ -3,12 +3,12 @@
 
 	
 	<passive id="1" name="Gelato" gfx="collectibles_001_gelato.png" description="Stay frosty" quality="2" cache="speed tearflag range"/>
-     <!--passive id="2" name="Durendal" gfx="collectibles_002_durnedal.png" description="egg"-->
-	 <active id="3" name="Dodgeball" gfx="collectibles_003_dodge_ball.png" description="Avoid the ball!" quality="3" maxcharges="4" chargetype="normal" cache="damage" />
-         <active id="4" name="A Ball" gfx="collectibles_004_a_ball.png" description="Loss of velocity" quality="0" maxcharges="0" chargetype="normal" cache="" />
+    <!--passive id="2" name="Durendal" gfx="collectibles_002_durnedal.png" description="egg"-->
+	<active id="3" name="Dodgeball" gfx="collectibles_003_dodge_ball.png" description="Avoid the ball!" quality="3" maxcharges="4" chargetype="normal" cache="damage" />
+    <active id="4" name="A Ball" gfx="collectibles_004_a_ball.png" description="Loss of velocity" quality="0" maxcharges="0" chargetype="normal" cache="" />
 	<passive id="5" name="Skeletal Figure" gfx="collectibles_005_skeletal_figure.png" description="More bonage" quality="3" cache="firedelay"/>
 	<passive id="6" name="Toothpaste" gfx="collectibles_006_toothpaste.png" description="Damage up + shotspeed down" quality="3" cache="shotspeed damage tearcolor"/>
-      <!--active id="7" name="Gunslinger" gfx="collectibles_007_gunslinger" description="Draw" quality="4" cache="damage"-->
+    <!--active id="7" name="Gunslinger" gfx="collectibles_007_gunslinger" description="Draw" quality="4" cache="damage"-->
 	<passive id="8" name="God's Gift" gfx="collectibles_008_godsgift.png" description="Oh great heavens" quality="0" cache="speed health" />
     
     
