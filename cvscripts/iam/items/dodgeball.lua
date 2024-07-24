@@ -10,14 +10,14 @@ mod:AddCallback(ModCallbacks.MC_USE_ITEM, function(_, itemID, rng, player, usefl
     if d.holdingCrossItem then
         d.holdingCrossItem = nil
         d.HoldingCrossItemBlankVisual = nil
-        player:AnimateCollectible(CollectibleType.COLLECTIBLE_A_BALL, "HideItem", "PlayerPickup")
+        player:AnimateCollectible(CrossVerse.Item.A_BALL, "HideItem", "PlayerPickup")
     else
-        d.holdingCrossItem = CollectibleType.COLLECTIBLE_DODGEBALL
+        d.holdingCrossItem = CrossVerse.Item.DODGEBALL
         d.HoldingCrossItemBlankVisual = true
-        player:AnimateCollectible(CollectibleType.COLLECTIBLE_A_BALL, "LiftItem", "PlayerPickup")
+        player:AnimateCollectible(CrossVerse.Item.A_BALL, "LiftItem", "PlayerPickup")
     end
     return {Discharge = false}
-end, CollectibleType.COLLECTIBLE_DODGEBALL)
+end, CrossVerse.Item.DODGEBALL)
 
 
 function mod:DodgeballShoot(player)
@@ -39,7 +39,7 @@ function mod:DodgeballShoot(player)
             if data.holdingCrossItem then
                 data.holdingCrossItem = nil
                 data.HoldingCrossItemBlankVisual = nil
-                player:AnimateCollectible(CollectibleType.COLLECTIBLE_A_BALL, "HideItem", "PlayerPickup")
+                player:AnimateCollectible(CrossVerse.Item.A_BALL, "HideItem", "PlayerPickup")
                 player:DischargeActiveItem(data.holdingCrossItemSlot)
             end
         end

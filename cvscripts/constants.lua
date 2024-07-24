@@ -10,14 +10,14 @@ CrossVerse.Item = {
 }
 
 CrossVerse.PassiveItems = {
-    CollectibleType.COLLECTIBLE_GELATO,
-    CollectibleType.GODS_GIFT,
-    CollectibleType.SKELETAL_FIGURE,
+    CrossVerse.Item.GELATO,
+    CrossVerse.Item.GODS_GIFT,
+    CrossVerse.Item.SKELETAL_FIGURE,
 }
 
 CrossVerse.Actives = {
-    CollectibleType.COLLECTIBLE_DODGEBALL,
-    CollectibleType.COLLECTIBLE_A_BALL
+    CrossVerse.Item.DODGEBALL,
+    CrossVerse.Item.A_BALL
 }
 
 CrossVerse.ThrowableStuff = {}

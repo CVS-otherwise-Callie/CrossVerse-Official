@@ -10,13 +10,13 @@ function mod:UpdateSkeletalFigureDamage(player)
 end
 
 mod.SkeletalFigureReplaceList = {
-    CollectibleType.COLLECTIBLE_MARROW,
-    CollectibleType.COLLECTIBLE_SLIPPED_RIB,
-    CollectibleType.COLLECTIBLE_POINTY_RIB,
-    CollectibleType.COLLECTIBLE_BOOK_OF_THE_DEAD, --shut up poly!!
-    CollectibleType.COLLECTIBLE_JAW_BONE,
-    CollectibleType.COLLECTIBLE_BRITTLE_BONES,
-    CollectibleType.COLLECTIBLE_BONE_SPURS,
+    CrossVerse.Item.MARROW,
+    CrossVerse.Item.SLIPPED_RIB,
+    CrossVerse.Item.POINTY_RIB,
+    CrossVerse.Item.BOOK_OF_THE_DEAD, --shut up poly!!
+    CrossVerse.Item.JAW_BONE,
+    CrossVerse.Item.BRITTLE_BONES,
+    CrossVerse.Item.BONE_SPURS,
 }
 
 

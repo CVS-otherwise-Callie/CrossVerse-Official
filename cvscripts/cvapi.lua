@@ -59,7 +59,7 @@ function mod:HoldStuffUp(player, data)
 		if lockAngle then
 			aim = mod:SnapVector(aim, lockAngle)
 		end
-		if data.holdingCrossItem == CollectibleType.COLLECTIBLE_DODGEBALL then
+		if data.holdingCrossItem == CrossVerse.Item.DODGEBALL then
 			mod:DodgeballShoot(player, data, aim)
 		else
 			if aim:Length() > 0.5 then
