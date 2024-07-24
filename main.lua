@@ -25,6 +25,6 @@ CrossVerse.LoadScripts({
     "cvscripts.dss.changelogs",
     "cvscripts.iam.main",
     "cvscripts.quaquao.main",
-	"cvscripts.xocolate.main",
+    "cvscripts.xocolate.main",
     "cvscripts.challenges.dodgeball",
 })
