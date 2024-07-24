@@ -27,4 +27,5 @@ CrossVerse.LoadScripts({
     "cvscripts.quaquao.main",
     "cvscripts.xocolate.main",
     "cvscripts.challenges.dodgeball",
+    "cvscripts.gnabble.main",
 })

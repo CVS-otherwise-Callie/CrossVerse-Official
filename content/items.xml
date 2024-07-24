@@ -10,6 +10,7 @@
 	<passive id="6" name="Toothpaste" gfx="collectibles_006_toothpaste.png" description="Damage up + shotspeed down" quality="3" cache="shotspeed damage tearcolor"/>
       <!--active id="7" name="Gunslinger" gfx="collectibles_007_gunslinger.png" description="Draw" quality="4" cache="damage"-->
 	<passive id="8" name="God's Gift" gfx="collectibles_008_godsgift.png" description="Oh great heavens" quality="0" cache="speed health" />
+    <active name="Bucket of Souls" gfx="collectibles_009_bucketofsouls.png" description="???" quality="4" craftquality="4" maxcharges="0" tags="offensive" />
     
     
 	<!--TRINKETS-->

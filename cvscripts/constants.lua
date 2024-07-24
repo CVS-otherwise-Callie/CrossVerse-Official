@@ -7,6 +7,7 @@ CrossVerse.Item = {
     GODS_GIFT = Isaac.GetItemIdByName("God's Gift"),
     SKELETAL_FIGURE = Isaac.GetItemIdByName("Skeletal Figure"),
     TOOTHPASTE = Isaac.GetItemIdByName("Toothpaste"),
+    BUCKET_OF_SOULS = Isaac.GetItemIdByName("Bucket of Souls"),
 }
 
 CrossVerse.PassiveItems = {
