@@ -12,24 +12,24 @@ mod:AddCallback(ModCallbacks.MC_USE_ITEM, function(_, itemID, rng, player, usefl
         d.HoldingCrossItemBlankVisual = nil
         useflags = UseFlag.USE_REMOVEACTIVE
         mod:BallFall(player)
-        player:AnimateCollectible(CollectibleType.COLLECTIBLE_A_BALL, "HideItem", "PlayerPickup")
+        player:AnimateCollectible(mod.Item.A_BALL, "HideItem", "PlayerPickup")
         return {Remove=true}
     else
-        d.holdingCrossItem = CollectibleType.COLLECTIBLE_A_BALL
+        d.holdingCrossItem = mod.Item.A_BALL
         d.HoldingCrossItemBlankVisual = true
-        player:AnimateCollectible(CollectibleType.COLLECTIBLE_A_BALL, "LiftItem", "PlayerPickup")
+        player:AnimateCollectible(mod.Item.A_BALL, "LiftItem", "PlayerPickup")
         if rng:RandomInt(1, 100) < 10 then
             damage = 10000000000
         else
             damage = 1
         end
     end
-end, CollectibleType.COLLECTIBLE_A_BALL)
+end, mod.Item.A_BALL)
 
 
 function mod:BallFall(player)
     local data = player:GetData()
-    local ball = Isaac.Spawn(EntityType.ENTITY_TEAR, 0, 0, player.Position, (player:GetShootingJoystick():Normalized() * 10) + player.Velocity, player):ToTear()
+    local ball = Isaac.Spawn(EntityType.ENTITY_TEAR, 0, 0, player.Position, (player:GetShootingJoystick():Normalized() * 10) + player.Velocity, player):ToTear() ---@cast ball EntityTear
     ball:GetData().isFallBall = true
     local s = ball:GetSprite()
     local anim = s:GetAnimation()

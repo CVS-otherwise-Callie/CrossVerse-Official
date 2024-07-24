@@ -1,15 +1,17 @@
 CrossVerse = RegisterMod("isaac CrossVerse", 1)
-local mod = CrossVerse
+
+CrossVerse.SaveManager = include("cvscripts.savemanager")
+CrossVerse.SaveManager.Init(CrossVerse)
 
 --load all main scripts
 --this one under is fiend folio cus my original was somehow trash
-function mod.LoadScripts(scripts)
+function CrossVerse.LoadScripts(scripts)
 	--load scripts
 	for i,v in ipairs(scripts) do
 		include(v)
 	end
 end
-mod.LoadScripts({
+CrossVerse.LoadScripts({
     --first
     "cvscripts.savedata",
     --alright important part over everyone getcho ass out of here
@@ -21,7 +23,6 @@ mod.LoadScripts({
     "cvscripts.der_existente.main",
     "cvscripts.dss.dssmain",
     "cvscripts.dss.changelogs",
-    "cvscripts.unlockapi.core",
     "cvscripts.iam.main",
     "cvscripts.quaquao.main",
     "cvscripts.challenges.dodgeball",
