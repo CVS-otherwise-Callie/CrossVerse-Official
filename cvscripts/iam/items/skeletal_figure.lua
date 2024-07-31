@@ -10,13 +10,14 @@ function mod:UpdateSkeletalFigureDamage(player)
 end
 
 mod.SkeletalFigureReplaceList = {
-    CrossVerse.Item.MARROW,
-    CrossVerse.Item.SLIPPED_RIB,
-    CrossVerse.Item.POINTY_RIB,
-    CrossVerse.Item.BOOK_OF_THE_DEAD, --shut up poly!!
-    CrossVerse.Item.JAW_BONE,
-    CrossVerse.Item.BRITTLE_BONES,
-    CrossVerse.Item.BONE_SPURS,
+    CollectibleType.COLLECTIBLE_MARROW,
+    CollectibleType.COLLECTIBLE_SLIPPED_RIB,
+    CollectibleType.COLLECTIBLE_POINTY_RIB,
+    CollectibleType.COLLECTIBLE_BOOK_OF_THE_DEAD, --shut up poly!!
+    CollectibleType.COLLECTIBLE_JAW_BONE,
+    CollectibleType.COLLECTIBLE_BRITTLE_BONES,
+    CollectibleType.COLLECTIBLE_BONE_SPURS,
+    CollectibleType.COLLECTIBLE_HOST_HAT,
 }
 
 
@@ -26,11 +27,12 @@ function mod:ReplaceItemSkeletalFigure(item)
     local pedestal = item:ToPickup()
     if pedestal:CanReroll() then
         if item.Type == EntityType.ENTITY_PICKUP and item.Variant == PickupVariant.PICKUP_COLLECTIBLE then
-        local item = itemConfig:GetCollectible(pedestal.SubType)
-        if item and not item:HasTags(ItemConfig.TAG_QUEST) then
-                if not mod:CheckTable(mod.SkeletalFigureReplaceList, item) then
-                    if rng:RandomInt(1, 10) > 5 then
-                        pedestal:Morph(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, mod.SkeletalFigureReplaceList[rng:RandomInt(1, #mod.SkeletalFigureReplaceList - 1)], true, true, true)
+        local itemcon = itemConfig:GetCollectible(pedestal.SubType)
+        if itemcon and not itemcon:HasTags(ItemConfig.TAG_QUEST) then
+                if not mod.CheckTable(mod.SkeletalFigureReplaceList, pedestal.SubType) then
+                    if math.random(10) <= CrossVerse.SaveManager.GetDeadSeaScrollsSave().skeletalReplaceChance then
+                        Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.POOF01, 0, item.Position, item.Velocity, item)
+                        pedestal:Morph(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, mod.SkeletalFigureReplaceList[rng:RandomInt(1, #mod.SkeletalFigureReplaceList)], true, true, true)
                     end
                 end
             end

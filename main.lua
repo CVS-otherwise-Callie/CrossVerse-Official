@@ -1,6 +1,11 @@
 CrossVerse = RegisterMod("isaac CrossVerse", 1)
-
 CrossVerse.SaveManager = include("cvscripts.savemanager")
+
+CrossVerse.SaveManager.DEFAULT_SAVE.file.deadSeaScrolls = {
+    skeletalReplaceChance = 5
+}
+
+
 CrossVerse.SaveManager.Init(CrossVerse)
 
 --load all main scripts
@@ -12,14 +17,10 @@ function CrossVerse.LoadScripts(scripts)
 	end
 end
 CrossVerse.LoadScripts({
-    --first
-    "cvscripts.savedata",
-    --alright important part over everyone getcho ass out of here
     "cvscripts.constants",
     "cvscripts.cvapi",
     "cvscripts.entities2",
     --bleh
-    "cvscripts.challenges.main",
     "cvscripts.der_existente.main",
     "cvscripts.dss.dssmain",
     "cvscripts.dss.changelogs",

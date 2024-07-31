@@ -77,7 +77,6 @@ end
 local DSSInitializerFunction = include("cvscripts.dss.dssmenucore")
 local dssmod = DSSInitializerFunction(DSSModName, DSSCoreVersion, MenuProvider)
 
-
 local dmdirectory = {
     main = {
         title = 'crossverse',
@@ -100,30 +99,36 @@ local dmdirectory = {
 
     settings =  {
             title = 'settings',
-                buttons = {
+            
+            buttons = {
+                {str = 'items', dest = 'items', tooltip = {strset = {'---','play with', 'and disable', 'or enable our', 'cool items', '---'}}},
+            }
 
-                    {str = 'corssverse button',      
-                    choices = {'enabled', 'disabled'},
-                    variable = 'exampledata',
-                    cursoroff = Vector(6, 0),
-                    setting = 1,
-
-                    load = function()
-                        if CrossVerse.exampledata then
-                            return 1
-                        else
-                            return 2
-                        end                    
-                    end,
-
-                    store = function(var)
-                        mod.exampledata = var
-                    end,
-
-                    tooltip = {strset = {'crossverse is', 'gonna be the', 'best mod', 'ever!!!'}}
-                    }
-                }
     },
+
+    items =  {
+        title = 'items',
+        buttons = {
+            {str = 'items', nosel = true},
+            {str = '----------', fsize=2, nosel = true},
+            {str = 'skeletal figure', nosel = true},
+            {
+                str = 'replace chance',
+                fsize=2,
+                increment = 1, max = 10,
+                variable = "skeletalReplaceChance",
+                slider = true,
+                setting = 5,
+                load = function()
+                    return CrossVerse.SaveManager.GetDeadSeaScrollsSave().skeletalReplaceChance and CrossVerse.SaveManager.GetDeadSeaScrollsSave().skeletalReplaceChance + 1 or 5
+                end,
+                store = function(var)
+                    CrossVerse.SaveManager.GetDeadSeaScrollsSave().skeletalReplaceChance = var
+                end,
+                tooltip = {strset = {'increases', 'how often', 'skeletal figure', 'replaces items', '', '5 by', 'default'}},
+            },
+        }
+},
 }
 
 local dmdirectorykey = {

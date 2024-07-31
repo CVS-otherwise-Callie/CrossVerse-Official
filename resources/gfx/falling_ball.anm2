@@ -2,7 +2,7 @@
 	<Info CreatedBy="robot" CreatedOn="7/20/2024 4:18:56 PM" Version="105" Fps="30"/>
 	<Content>
 		<Spritesheets>
-			<Spritesheet Path="items\collectibles\collectibles_006_a_ball.png" Id="0"/>
+			<Spritesheet Path="items\collectibles\collectibles_004_a_ball.png" Id="0"/>
 		</Spritesheets>
 		<Layers>
 			<Layer Name="body" Id="0" SpritesheetId="0"/>

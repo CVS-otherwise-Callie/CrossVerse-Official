@@ -3,7 +3,6 @@ local mod = CrossVerse
 
 function CrossVerse.CheckTable(table, thing)
 	for _, v in ipairs (table) do
-		print(thing.SubType , v)
 		if tonumber(thing) == tonumber(v) then
 			return true
 		end
