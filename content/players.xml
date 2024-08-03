@@ -34,11 +34,19 @@
                 costumeSuffix="abramb" 
 		bSkinParent="abram" 
         /> 
-        <player name="50sac" skin="Character_001_isaac.png" hp="6" 
-                nameimage="PlayerName_fatty.png" 
-                portrait="PlayerPortrait_fatty.png"
-		skinColor="-1" costumeSuffix="isaac"
-                hidden="true"
+
+        <!--will add items as soon as they exist-->
+        <player name="Boil"
+                skin="character_boil.png"
+                nameimage="playername_boil.png"
+                hp="2"
+                armor="4"
+                bombs="2"
+                keys="1"
+                portrait="playerportrait_boil.png"
+                skinColor="-1"
+                items="" 
         />
+        
 </players>
 
