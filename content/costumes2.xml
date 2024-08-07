@@ -1,0 +1,6 @@
+<costumes anm2root="gfx/characters">
+
+    <costume anm2path="boil_hat.anm2" type="none" prority="100" />
+    <costume anm2path="boil_braids.anm2" type="none" prority="100" />
+
+<costume />
