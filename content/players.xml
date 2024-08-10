@@ -13,7 +13,8 @@
                 portrait="playerportrait_fatty.png"
 		skinColor="1" 
                 costumeSuffix="abram"
-                birthright="???"  
+                birthright="???" 
+                hidden="true" 
         />
         <!--evil evil lemon shnevil-->
         <player name="AbramB" 
@@ -46,6 +47,7 @@
                 portrait="playerportrait_boil.png"
                 skinColor="-1"
                 items="" 
+                hidden="true"
         />
         
 </players>

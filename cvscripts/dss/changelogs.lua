@@ -1,55 +1,47 @@
-DeadSeaScrollsMenu.AddChangelog("CrossVerse", "CrossVerse v0.0.2",[[{FSIZE2}new stuff
+DeadSeaScrollsMenu.AddChangelog("CrossVerse", "CrossVerse Wave 1",[[{FSIZE2}WAVE 1
 
-- added the dodgeball! 
-a active that bounces
-around the room
-up to 3 times
-be careful with it...
+crossverse wave 1 is out
 
-[[{FSIZE2}fixes
+crossverse: a mod that adds new items 
+and characters in the future 
+2 already work in progress!!!
 
-- fixed the misnaming of quaquao
+[[{FSIZE2}items
 
-- fixed a bug in the iam main
+-- dodgeball - q3 --
 
-]])
+Upon use shoots a dodgeball 
+that bounces off 
+obstacles and deals damage
 
-DeadSeaScrollsMenu.AddChangelog("CrossVerse", "CrossVerse v0.0.1",[[{FSIZE2}new shit
+-- gelato - q3 --
 
-- abram kinda works!! 
-(not really but we're
-getting there, 
-he needs both his ranged
-and melee attacks implemented)
+-0.15 speed 
+tears always slow
 
-- added actual mod structure 
+-- toothpaste - q2 --
 
-- added unlock api but
-the actual unlocks have not
-been added yet, sorry!
+-0.2 shotspeed 
++1 damage
 
-- gelato has been added
-a speed down for a range up
-and slowing shots
+-- skeletal Figure - q3 --
 
-- nonexistent trinkets got
-their art updated
-(please don't ask)
+Makes boney items appear randomly
+you could change the chance
+in the dss menu
+why would you tho?
 
-- please join our discord 
-to tell us 
-what we should fix/add
+-- bucket o souls - q4 --
 
-[[{FSIZE2}what we're planing on
+Upon killing an enemy gives you 
+a purgatory soul in the bucket 
+press spacebar to realse the souls
 
-- adding the said trinkets
+all items for right now 
+we are lacking ideas mainly and time
+wave 2 in 3 months or sum
 
-- adding the said unlocks!
-
-- adding fortunes related
-to abram and other
-stuff from the mod
-
-- rasacking a aceolotl run
-on multiplayer
+LOOK IN DA FILES FOR A SUPRISE 
+CUZ "dratainmzted" ISSS GONNA 
+BE :teala":trie:==:DDDDDDDDDD
 ]])
