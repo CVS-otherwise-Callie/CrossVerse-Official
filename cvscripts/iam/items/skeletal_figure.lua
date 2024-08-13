@@ -23,6 +23,10 @@ mod.SkeletalFigureReplaceList = {
 
 
 function mod:ReplaceItemSkeletalFigure(item)
+    if not CrossVerse.SaveManager.GetDeadSeaScrollsSave().skeletalReplaceChance then
+        CrossVerse.SaveManager.GetDeadSeaScrollsSave().skeletalReplaceChance = 5
+    end
+
     local player = Isaac.GetPlayer()
     if player:HasCollectible(mod.Item.SKELETAL_FIGURE) then
     local pedestal = item:ToPickup()

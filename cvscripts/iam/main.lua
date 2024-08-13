@@ -42,8 +42,6 @@ mod:AddCallback(ModCallbacks.MC_POST_TEAR_UPDATE, function(_, entity)
 
     --this is for items :3
     if data.isFallBall == true then
-        if entity.Height > 0 then
-        end
     elseif data.isDodgeball == true then
         mod:DodgeBallHeight(entity)
     end

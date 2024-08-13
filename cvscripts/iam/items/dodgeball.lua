@@ -48,7 +48,7 @@ end
 
 function mod:DodgeBallEntityAi(ball)
     local d = ball:GetData()
-    ball.TearFlags = Isaac.GetPlayer().TearFlags
+    ball.TearFlags = ball.TearFlags
     ball.Height = -20
     d.dir = d.dir or 0
     if not d.init then
